@@ -4,7 +4,7 @@ Maintainer Olatunbosun Egberinde <bosunski@gmail.com>
 
 ADD https://dl.bintray.com/php-alpine/key/php-alpine.rsa.pub /etc/apk/keys/php-alpine.rsa.pub
 
-ARG PHP_VERSION=7.4
+ARG PHP_VERSION=7.3
 ARG ALPINE_VERSION=3.9
 
 # CONFIGURE ALPINE REPOSITORIES AND PHP BUILD DIR.
