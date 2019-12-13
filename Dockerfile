@@ -1,11 +1,11 @@
-FROM alpine:3.9
+FROM alpine:3.8
 
 Maintainer Olatunbosun Egberinde <bosunski@gmail.com>
 
 ADD https://dl.bintray.com/php-alpine/key/php-alpine.rsa.pub /etc/apk/keys/php-alpine.rsa.pub
 
-ARG PHP_VERSION=7.4
-ARG ALPINE_VERSION=3.9
+ARG PHP_VERSION=7.2
+ARG ALPINE_VERSION=3.8
 
 # CONFIGURE ALPINE REPOSITORIES AND PHP BUILD DIR.
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/v${ALPINE_VERSION}/main" > /etc/apk/repositories && \
