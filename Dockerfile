@@ -20,6 +20,7 @@ RUN apk add --no-cache --update curl \
     php@php \
     php-openssl@php \
     php-pdo@php \
+    php-iconv@php \
     php-mysqlnd@php \
     php-pdo_mysql@php \
     php-mbstring@php \
