@@ -22,6 +22,7 @@ RUN apk add --no-cache --update curl \
     php-pdo@php \
     php-bcmath@php \
     php-pcntl@php \
+    php-curl@php \
     php-posix@php \
     php-mysqlnd@php \
     php-pdo_mysql@php \
@@ -49,6 +50,8 @@ RUN apk add --no-cache --update curl \
 #		     php7-dom --repository http://nl.alpinelinux.org/alpine/edge/testing/ && rm /var/cache/apk/*
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
+
+RUN composer global require hirak/prestissimo
 
 RUN mkdir -p /var/www
 
