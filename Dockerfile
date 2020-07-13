@@ -18,8 +18,9 @@ RUN apk add --no-cache --update curl \
 	git \
 	php-fpm@php \
     php@php \
-    php-openssl@php \
     php-pdo@php \
+    php-curl@php \
+    php-iconv@php \
     php-bcmath@php \
     php-pcntl@php \
     php-curl@php \
