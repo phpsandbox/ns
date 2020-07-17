@@ -19,6 +19,8 @@ RUN apk add --no-cache --update curl \
 	php-fpm@php \
     php@php \
     php-pdo@php \
+    php-sqlite3@php \
+    php-pdo_sqlite@php \
     php-curl@php \
     php-iconv@php \
     php-bcmath@php \
