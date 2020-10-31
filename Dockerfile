@@ -4,8 +4,8 @@ Maintainer Olatunbosun Egberinde <bosunski@gmail.com>
 
 ADD https://dl.bintray.com/php-alpine/key/php-alpine.rsa.pub /etc/apk/keys/php-alpine.rsa.pub
 
-ARG PHP_VERSION=7.4
-ARG ALPINE_VERSION=3.9
+ARG PHP_VERSION=8.0
+ARG ALPINE_VERSION=3.11
 
 # CONFIGURE ALPINE REPOSITORIES AND PHP BUILD DIR.
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/v${ALPINE_VERSION}/main" > /etc/apk/repositories && \
@@ -16,28 +16,28 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/v${ALPINE_VERSION}/main" > /etc/a
 # INSTALL PHP AND SOME EXTENSIONS. SEE: https://github.com/codecasts/php-alpine
 RUN apk add --no-cache --update curl \
 	git \
-	php-fpm@php \
-    php@php \
-    php-pdo@php \
-    php-sqlite3@php \
-    php-pdo_sqlite@php \
-    php-curl@php \
-    php-iconv@php \
-    php-bcmath@php \
-    php-pcntl@php \
-    php-curl@php \
-    php-posix@php \
-    php-mysqlnd@php \
-    php-pdo_mysql@php \
-    php-mbstring@php \
-    php-phar@php \
-    php-session@php \
-    php-dom@php \
-    php-ctype@php \
-    php-zlib@php \
-    php-json@php \
-    php-xml@php && \
-    ln -s /usr/bin/php7 /usr/bin/php
+	php8-fpm@php \
+    php8@php \
+    php8-pdo@php \
+    php8-sqlite3@php \
+    php8-pdo_sqlite@php \
+    php8-curl@php \
+    php8-iconv@php \
+    php8-bcmath@php \
+    php8-pcntl@php \
+    php8-curl@php \
+    php8-posix@php \
+    php8-mysqlnd@php \
+    php8-pdo_mysql@php \
+    php8-mbstring@php \
+    php8-phar@php \
+    php8-session@php \
+    php8-dom@php \
+    php8-ctype@php \
+    php8-zlib@php \
+#    php-json@php \
+    php8-xml@php && \
+    ln -s /usr/bin/php8 /usr/bin/php
 
 #RUN apk --update add wget \
 #		     curl \
