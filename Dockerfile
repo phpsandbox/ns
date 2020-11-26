@@ -25,6 +25,7 @@ RUN apk add --no-cache --update curl \
     php-iconv@php \
     php-bcmath@php \
     php-sodium@php \
+    php-intl@php \
     php-pcntl@php \
     php-curl@php \
     php-posix@php \
